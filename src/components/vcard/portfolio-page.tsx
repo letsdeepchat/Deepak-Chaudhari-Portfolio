@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'Sales Academy for Learning',
     category: 'Web Development',
-    imageUrl: 'https://i.imgur.com/8L5wYyL.png',
+    imageUrl: 'https://picsum.photos/600/400?random=1',
     link: '#',
     aiHint: 'online learning',
     description: 'Developed Node.js backend, interactive learning modules, bookmarks, quizzes, videos and leaderboard features enhancing student learning engagement.'
