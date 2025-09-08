@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'Sales Academy for Learning',
     category: 'Web Development',
-    imageUrl: 'https://picsum.photos/600/400?random=1',
+    imageUrl: 'https://letsdeepchat.github.io/portfolio/assets/img/SalesAcademyProject.jpg',
     link: '#',
     aiHint: 'e-learning platform',
     description: 'Developed Node.js backend, interactive learning modules, bookmarks, quizzes, videos and leaderboard features enhancing student learning engagement.'
