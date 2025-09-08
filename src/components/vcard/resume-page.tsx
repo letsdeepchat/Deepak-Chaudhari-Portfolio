@@ -53,8 +53,11 @@ const skills = [
 ];
 
 const certifications = [
-    "The Full Stack Developer",
-    "Zero to Mastery, Udemy"
+    "AWS Certified Cloud Practitioner(CLF-C01)",
+    "Selenium Essential Training",
+    "Udemy Certified The Complete (FullStack) Web Developer: Zero To Mastery",
+    "React + Redux",
+    "Ducat Certified Data Science using Python"
 ]
 
 export default function ResumePage() {
