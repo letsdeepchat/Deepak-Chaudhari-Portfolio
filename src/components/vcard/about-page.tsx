@@ -21,7 +21,7 @@ const services = [
 
 const clients = [
     { name: 'FPO', logo: 'https://www.nabard.org/images/logo.png' },
-    { name: 'NPCI', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NPCI_Logo.svg/2560px-NPCI_Logo.svg.png' },
+    { name: 'NPCI', logo: 'https://play-lh.googleusercontent.com/A-dier3sEwf8V-5Xj1UuEV1GxPbJgIRl_JOqFA-SiAZhHyCMKlwaOIH3AsQSy0v4ZA=w480-h960-rw' },
     { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png' },
     { name: 'Nokia', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nokia_wordmark.svg/2560px-Nokia_wordmark.svg.png' },
 ];

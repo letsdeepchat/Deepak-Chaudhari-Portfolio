@@ -57,6 +57,12 @@ const nextConfig: NextConfig = {
         hostname: 'letsdeepchat.github.io',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
