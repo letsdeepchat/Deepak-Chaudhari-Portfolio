@@ -11,7 +11,7 @@ const projects = [
     category: 'Web Development',
     imageUrl: 'https://picsum.photos/600/400?random=1',
     link: '#',
-    aiHint: 'online learning',
+    aiHint: 'e-learning platform',
     description: 'Developed Node.js backend, interactive learning modules, bookmarks, quizzes, videos and leaderboard features enhancing student learning engagement.'
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     category: 'Web Development',
     imageUrl: 'https://picsum.photos/600/400?random=2',
     link: '#',
-    aiHint: 'e-commerce website',
+    aiHint: 'e-commerce shopping',
     description: 'Built authentication, add-to-cart, payment gateway integration and seamless product flow to deliver scalable, user-friendly e-commerce experience.'
   },
 ];
