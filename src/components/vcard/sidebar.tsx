@@ -48,7 +48,7 @@ export default function Sidebar() {
             DEEPAK CHAUDHARI
           </h1>
           <p className="mt-2 rounded-md bg-background px-3 py-1 text-sm font-light text-primary">
-            Backend Developer
+            Software Developer
           </p>
         </div>
 
