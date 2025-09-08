@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Gram2Home e-Commerce',
     category: 'Web Development',
-    imageUrl: 'https://picsum.photos/600/400?random=2',
+    imageUrl: 'https://letsdeepchat.github.io/portfolio/assets/img/g2m.jpg',
     link: '#',
     aiHint: 'e-commerce shopping',
     description: 'Built authentication, add-to-cart, payment gateway integration and seamless product flow to deliver scalable, user-friendly e-commerce experience.'
