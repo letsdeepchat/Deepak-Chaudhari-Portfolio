@@ -51,7 +51,7 @@ export default function ContactPage() {
 
       <section className="mb-8">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112184.28282424411!2d77.02297985834928!3d28.52758367989326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sGurugram%2C%20Haryana%2C%20India!5e0!3m2!1sen!2sus!4v1693832822165!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.4281359303!2d77.50126431640624!3d12.953997400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe4!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700030641249!5m2!1sen!2sin"
           width="100%"
           height="300"
           className="w-full rounded-2xl border-0"

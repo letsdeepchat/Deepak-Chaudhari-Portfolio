@@ -16,7 +16,7 @@ import Link from 'next/link';
 import { WhatsappIcon } from '../portfolio/icons';
 
 const socialLinks = [
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/letsdeepchat/', icon: Linkedin },
+    { name: 'LinkedIn', href: 'https://linkedin.com/in/letsdeepchat', icon: Linkedin },
     { name: 'GitHub', href: 'https://github.com/letsdeepchat', icon: Github },
     { name: 'Instagram', href: 'https://www.instagram.com/letsdeepchat/', icon: Instagram },
     { name: 'Twitter', href: 'https://www.twitter.com/letsdeepchat/', icon: Twitter },
@@ -42,10 +42,10 @@ export default function Sidebar() {
 
         <div className="info-content">
           <h1 className="text-2xl font-semibold text-foreground">
-            Deepak Chaudhari
+            DEEPAK CHAUDHARI
           </h1>
           <p className="mt-2 rounded-md bg-background px-3 py-1 text-sm font-light text-primary">
-            Software Engineer
+            Backend Developer
           </p>
         </div>
 
@@ -76,10 +76,10 @@ export default function Sidebar() {
                 Email
               </p>
               <a
-                href="mailto:letsdeepchat@gmail.com"
+                href="mailto:deepakchaudhari705@gmail.com"
                 className="text-sm text-foreground hover:text-accent"
               >
-                letsdeepchat@gmail.com
+                deepakchaudhari705@gmail.com
               </a>
             </div>
           </li>
@@ -100,21 +100,7 @@ export default function Sidebar() {
               </a>
             </div>
           </li>
-
-          <li className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background text-accent shadow-sm">
-              <Calendar className="h-6 w-6" />
-            </div>
-            <div>
-              <p className="text-xs font-medium uppercase text-muted-foreground">
-                Birthday
-              </p>
-              <time dateTime="1998-08-16" className="text-sm text-foreground">
-                August 16, 1998
-              </time>
-            </div>
-          </li>
-
+          
           <li className="flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background text-accent shadow-sm">
               <MapPin className="h-6 w-6" />
@@ -124,7 +110,7 @@ export default function Sidebar() {
                 Location
               </p>
               <address className="text-sm not-italic text-foreground">
-                Gurugram, Haryana, India
+                Bengaluru, Karnataka
               </address>
             </div>
           </li>

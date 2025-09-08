@@ -1,45 +1,61 @@
-import { Book, Code } from 'lucide-react';
+import { Book, Code, GraduationCap } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { JavaIcon, PythonIcon, ReactIcon, NextJSIcon, FastAPIIcon, DockerIcon } from '@/components/portfolio/icons';
 
 const education = [
     {
-        institution: 'Graphic Era Hill University',
-        period: '2017 — 2021',
-        description: 'B.Tech in Computer Science and Engineering.'
-    },
-    {
-        institution: 'CBSE Board',
-        period: '2015-2016',
-        description: 'Completed my 12th grade with a focus on Physics, Chemistry, and Mathematics.'
+        institution: 'Dr. A.P.J. Abdul Kalam Technical University',
+        period: '2014 — 2018',
+        description: 'B.Tech in Computer Science & Engineering, Aggregate: 67%'
     },
 ];
 
 const experience = [
     {
-        title: 'Software Engineer',
+        title: 'Software Developer',
         company: 'Questt AI',
-        period: '2022 — Present',
-        description: 'Implemented NPCL dashboard auth, configs, APIs; tested Adaequare/Postman; connected DBs; built OpenAI chatbots.'
+        period: 'Jun 2025 — Present',
+        description: 'Developed GST automation system using FastAPI and PostgreSQL with secure APIs. Built NPCL dashboard authentication, configurations, APIs and integrated external systems. Worked on Postman testing, DB connectivity, and OpenAI chatbot development.'
     },
     {
-        title: 'Associate Software Engineer',
-        company: 'Adaequare',
-        period: '2021 — 2022',
-        description: 'Developed and maintained web applications using React, Node.js and other technologies. Contributed to SharePoint based projects.'
+        title: 'Technical Developer',
+        company: 'AB InBev',
+        period: 'Sep 2023 — Feb 2024',
+        description: 'Developed scalable Node.js APIs improving app performance by 25%. Implemented secure authentication/authorization reducing security risks by 40%. Used async programming to enhance performance and non-blocking operations.'
+    },
+    {
+        title: 'Web Developer',
+        company: 'Karabi Software',
+        period: 'Jun 2022 — Apr 2023',
+        description: 'Led MongoDB database development improving data processing speed by 50%. Integrated third-party APIs to deliver seamless customer experiences. Built secure JWT-based backend and deployed on Linux Apache server.'
+    },
+    {
+        title: 'Process Analyst',
+        company: 'Visionet Systems',
+        period: 'Sep 2020 — May 2022',
+        description: 'Improved backend scalability and achieved 99.9% uptime with load balancing. Developed five strategic backend features using ES6 and asynchronous programming. Optimized server-side code for performance and reliability.'
     }
 ]
 
 const skills = [
-  { name: 'JavaScript', value: 90, icon: <Code className="h-6 w-6 text-accent"/> },
-  { name: 'Python', value: 85, icon: <PythonIcon className="h-6 w-6 text-accent"/> },
-  { name: 'Java', value: 75, icon: <JavaIcon className="h-6 w-6 text-accent"/> },
-  { name: 'React', value: 90, icon: <ReactIcon className="h-6 w-6 text-accent"/> },
-  { name: 'Next.js', value: 85, icon: <NextJSIcon className="h-6 w-6 text-accent"/> },
+  { name: 'Node.js', value: 90, icon: <Code className="h-6 w-6 text-accent"/> },
+  { name: 'React.js', value: 85, icon: <ReactIcon className="h-6 w-6 text-accent"/> },
+  { name: 'Express.js', value: 88, icon: <Code className="h-6 w-6 text-accent"/> },
   { name: 'FastAPI', value: 80, icon: <FastAPIIcon className="h-6 w-6 text-accent"/> },
+  { name: 'Next.js', value: 85, icon: <NextJSIcon className="h-6 w-6 text-accent"/> },
+  { name: 'JavaScript', value: 90, icon: <Code className="h-6 w-6 text-accent"/> },
+  { name: 'TypeScript', value: 85, icon: <Code className="h-6 w-6 text-accent"/> },
+  { name: 'Python', value: 85, icon: <PythonIcon className="h-6 w-6 text-accent"/> },
+  { name: 'PostgreSQL', value: 80, icon: <Code className="h-6 w-6 text-accent"/> },
+  { name: 'MongoDB', value: 78, icon: <Code className="h-6 w-6 text-accent"/> },
+  { name: 'MySQL', value: 75, icon: <Code className="h-6 w-6 text-accent"/> },
   { name: 'Docker', value: 70, icon: <DockerIcon className="h-6 w-6 text-accent"/> },
-  { name: 'AI/ML', value: 75, icon: <Code className="h-6 w-6 text-accent"/> },
 ];
+
+const certifications = [
+    "The Full Stack Developer",
+    "Zero to Mastery, Udemy"
+]
 
 export default function ResumePage() {
   return (
@@ -53,7 +69,7 @@ export default function ResumePage() {
         <section>
           <div className="mb-6 flex items-center gap-4">
             <div className="rounded-lg bg-background p-3 shadow-sm">
-              <Book className="h-6 w-6 text-accent" />
+              <GraduationCap className="h-6 w-6 text-accent" />
             </div>
             <h3 className="text-xl font-medium text-foreground">Education</h3>
           </div>
@@ -103,6 +119,15 @@ export default function ResumePage() {
                 </div>
               <Progress value={skill.value} className="h-2 [&>div]:bg-accent" />
             </li>
+          ))}
+        </ul>
+      </section>
+
+       <section className="mt-12">
+        <h3 className="mb-6 text-xl font-medium text-foreground">Certifications</h3>
+        <ul className="grid gap-2 sm:grid-cols-2">
+          {certifications.map((cert) => (
+            <li key={cert} className="text-muted-foreground">{cert}</li>
           ))}
         </ul>
       </section>

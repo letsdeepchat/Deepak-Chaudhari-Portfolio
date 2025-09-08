@@ -1,34 +1,29 @@
-import { Code, Server, Speaker, Star } from 'lucide-react';
+import { Code, Server, Bot } from 'lucide-react';
 import Image from 'next/image';
 
 const services = [
   {
     icon: <Code className="h-10 w-10 text-accent" />,
-    title: 'Web development',
-    description: 'High-quality development of sites at the professional level.',
+    title: 'Backend Development',
+    description: 'Specialized in designing scalable APIs and modern web apps.',
   },
   {
     icon: <Server className="h-10 w-10 text-accent" />,
-    title: 'Backend Development',
-    description: 'Robust backend solutions for web and mobile applications.',
+    title: 'Automation Systems',
+    description: 'Building robust automation systems to improve efficiency.',
   },
    {
-    icon: <Star className="h-10 w-10 text-accent" />,
-    title: 'AI Integration',
-    description: 'Integrating AI models to create intelligent applications.',
-  },
-  {
-    icon: <Speaker className="h-10 w-10 text-accent" />,
-    title: 'Public Speaking',
-    description: 'Sharing knowledge on tech, AI, and software development.',
+    icon: <Bot className="h-10 w-10 text-accent" />,
+    title: 'Chatbot Integration',
+    description: 'Integrating AI-powered chatbots for seamless user experiences.',
   },
 ];
 
 const clients = [
-    { name: 'Nabard', logo: 'https://www.nabard.org/images/logo.png' },
-    { name: 'Anheuser-Busch InBev', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/AB_InBev_logo.svg/1200px-AB_InBev_logo.svg.png' },
-    { name: 'Adaequare', logo: 'https://media.licdn.com/dms/image/D4D0BAQG7Z9Y1X9X9Xg/company-logo_200_200/0/1688533838340/adaequare_info_pvt_ltd_logo?e=2147483647&v=beta&t=x_h7L0f4b3Y-jJ7n8rZ6tYk9X8w4B-g8G_a7H8rY9zU' },
-    { name: 'Questt', logo: 'https://media.licdn.com/dms/image/C4D0BAQHi63T1tWk2hA/company-logo_200_200/0/1630651786576/questt_logo?e=2147483647&v=beta&t=W-3-E0t4a3E-X6x_wX8x8Qz9Z9i_x9c8X7zI8Z7j8Zk' },
+    { name: 'Questt AI', logo: 'https://media.licdn.com/dms/image/C4D0BAQHi63T1tWk2hA/company-logo_200_200/0/1630651786576/questt_logo?e=2147483647&v=beta&t=W-3-E0t4a3E-X6x_wX8x8Qz9Z9i_x9c8X7zI8Z7j8Zk' },
+    { name: 'AB InBev', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/AB_InBev_logo.svg/1200px-AB_InBev_logo.svg.png' },
+    { name: 'Karabi Software', logo: 'https://media.licdn.com/dms/image/D4D0BAQG7Z9Y1X9X9Xg/company-logo_200_200/0/1688533838340/adaequare_info_pvt_ltd_logo?e=2147483647&v=beta&t=x_h7L0f4b3Y-jJ7n8rZ6tYk9X8w4B-g8G_a7H8rY9zU' },
+    { name: 'Visionet Systems', logo: 'https://media.licdn.com/dms/image/C560BAQHY-gO5X4D4_w/company-logo_200_200/0/1630623326115/visionet_systems_inc_logo?e=2147483647&v=beta&t=B-xG0tL-L5L6_R_H_gP_yR-Z4Z3Y-4H2K1L3Y_x_8_Q' },
 ];
 
 export default function AboutPage() {
@@ -41,10 +36,7 @@ export default function AboutPage() {
 
       <section className="text-muted-foreground space-y-4">
         <p>
-         Hello! I'm Deepak Chaudhari, a B.Tech Computer Science graduate with over 2.5 years of experience as a Software Engineer. I specialize in building robust and scalable applications.
-        </p>
-        <p>
-         My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.
+         Experienced Backend Developer (3+ years) skilled in Node.js, FastAPI, Next.js, and SQL/NoSQL databases. Specialized in designing scalable APIs, automation systems, chatbot integrations, and modern web apps. Proven record in secure, learning, and e-commerce solutions.
         </p>
       </section>
 

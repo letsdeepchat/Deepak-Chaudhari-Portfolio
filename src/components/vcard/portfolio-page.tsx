@@ -6,50 +6,24 @@ import Link from 'next/link';
 
 const projects = [
   {
-    title: 'G2H e-Commerce Services',
+    title: 'Sales Academy for Learning',
     category: 'Web Development',
     imageUrl: 'https://picsum.photos/600/400?random=1',
-    link: 'http://gram2home.in/',
-    aiHint: 'ecommerce website',
+    link: '#',
+    aiHint: 'elearning platform',
+    description: 'Developed Node.js backend, interactive learning modules, bookmarks, quizzes, videos and leaderboard features enhancing student learning engagement.'
   },
   {
-    title: 'iFPO Integration Software',
+    title: 'Gram2Home e-Commerce',
     category: 'Web Development',
     imageUrl: 'https://picsum.photos/600/400?random=2',
-    link: 'http://ifpo.in/',
-    aiHint: 'software dashboard',
-  },
-  {
-    title: 'Tribal Development Fund',
-    category: 'Web Design',
-    imageUrl: 'https://picsum.photos/600/400?random=3',
-    link: 'https://www.nabard.org/content1.aspx?id=579&catid=8&mid=8',
-    aiHint: 'community project',
-  },
-  {
-    title: 'NabFPO Service Provider',
-    category: 'Applications',
-    imageUrl: 'https://picsum.photos/600/400?random=4',
-    link: 'https://nabfpo.in/',
-    aiHint: 'financial services',
-  },
-   {
-    title: 'People Cycle for Tracking',
-    category: 'Web Design',
-    imageUrl: 'https://picsum.photos/600/400?random=5',
-    link: 'https://anheuserbuschinbev.sharepoint.com/sites/PeopleCycleAnalytics',
-    aiHint: 'analytics dashboard',
-  },
-  {
-    title: 'Sales Academy for Learning',
-    category: 'Web Design',
-    imageUrl: 'https://picsum.photos/600/400?random=6',
-    link: 'https://anheuserbuschinbev.sharepoint.com/sites/Sales-EUR',
-    aiHint: 'elearning platform',
+    link: '#',
+    aiHint: 'ecommerce website',
+    description: 'Built authentication, add-to-cart, payment gateway integration and seamless product flow to deliver scalable, user-friendly e-commerce experience.'
   },
 ];
 
-const categories = ['All', 'Web Design', 'Applications', 'Web Development'];
+const categories = ['All', 'Web Development'];
 
 export default function PortfolioPage() {
   const [filter, setFilter] = useState('All');
@@ -84,7 +58,7 @@ export default function PortfolioPage() {
           ))}
         </ul>
 
-        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {filteredProjects.map((project) => (
             <li key={project.title}>
               <Link href={project.link} target="_blank" rel="noopener noreferrer" className="group block">
@@ -106,6 +80,9 @@ export default function PortfolioPage() {
                 </h3>
                 <p className="text-sm capitalize text-muted-foreground">
                   {project.category}
+                </p>
+                 <p className="mt-2 text-sm text-muted-foreground">
+                  {project.description}
                 </p>
               </Link>
             </li>

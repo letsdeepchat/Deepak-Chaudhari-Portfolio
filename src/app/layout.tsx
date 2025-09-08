@@ -4,11 +4,11 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Deepak Chaudhari - Software Engineer Portfolio',
+  title: 'Deepak Chaudhari - Backend Developer Portfolio',
   description:
-    'Deepak Chaudhari - Software Engineer at Questt AI. Expert in JavaScript, Python, React, Next.js, FastAPI, Docker, and AI technologies.',
+    'Experienced Backend Developer (3+ years) skilled in Node.js, FastAPI, Next.js, and SQL/NoSQL databases. Specialized in designing scalable APIs, automation systems, chatbot integrations, and modern web apps.',
   keywords:
-    'Software Engineer, JavaScript, Python, React, Next.js, FastAPI, Docker, AI, Langchain, Questt AI',
+    'Backend Developer, Node.js, FastAPI, Next.js, SQL, NoSQL, APIs, Automation, Chatbots, Web Apps',
   authors: [{ name: 'Deepak Chaudhari' }],
 };
 
