@@ -20,10 +20,10 @@ const services = [
 ];
 
 const clients = [
-    { name: 'Questt AI', logo: 'https://media.licdn.com/dms/image/C4D0BAQHi63T1tWk2hA/company-logo_200_200/0/1630651786576/questt_logo?e=2147483647&v=beta&t=W-3-E0t4a3E-X6x_wX8x8Qz9Z9i_x9c8X7zI8Z7j8Zk' },
-    { name: 'AB InBev', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/AB_InBev_logo.svg/1200px-AB_InBev_logo.svg.png' },
-    { name: 'Karabi Software', logo: 'https://media.licdn.com/dms/image/D4D0BAQG7Z9Y1X9X9Xg/company-logo_200_200/0/1688533838340/adaequare_info_pvt_ltd_logo?e=2147483647&v=beta&t=x_h7L0f4b3Y-jJ7n8rZ6tYk9X8w4B-g8G_a7H8rY9zU' },
-    { name: 'Visionet Systems', logo: 'https://media.licdn.com/dms/image/C560BAQHY-gO5X4D4_w/company-logo_200_200/0/1630623326115/visionet_systems_inc_logo?e=2147483647&v=beta&t=B-xG0tL-L5L6_R_H_gP_yR-Z4Z3Y-4H2K1L3Y_x_8_Q' },
+    { name: 'FPO', logo: 'https://www.nabard.org/images/logo.png' },
+    { name: 'NPCI', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NPCI_Logo.svg/2560px-NPCI_Logo.svg.png' },
+    { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png' },
+    { name: 'Nokia', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nokia_wordmark.svg/2560px-Nokia_wordmark.svg.png' },
 ];
 
 export default function AboutPage() {
