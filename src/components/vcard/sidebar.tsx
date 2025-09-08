@@ -5,19 +5,22 @@ import {
   ChevronDown,
   Mail,
   Smartphone,
-  Calendar,
   MapPin,
   Linkedin,
   Github,
   Instagram,
   Twitter,
+  Book,
+  Code,
 } from 'lucide-react';
 import Link from 'next/link';
 import { WhatsappIcon } from '../portfolio/icons';
 
 const socialLinks = [
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/letsdeepchat', icon: Linkedin },
-    { name: 'GitHub', href: 'https://github.com/letsdeepchat', icon: Github },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/letsdeepchat', icon: Linkedin },
+    { name: 'GitHub', href: 'https://www.github.com/letsdeepchat', icon: Github },
+    { name: 'Medium', href: 'https://www.letsdeepchat.medium.com', icon: Book },
+    { name: 'LeetCode', href: 'https://leetcode.com/letsdeepchat/', icon: Code },
     { name: 'Instagram', href: 'https://www.instagram.com/letsdeepchat/', icon: Instagram },
     { name: 'Twitter', href: 'https://www.twitter.com/letsdeepchat/', icon: Twitter },
     { name: 'WhatsApp', href: 'https://wa.me/917895840255', icon: WhatsappIcon },
