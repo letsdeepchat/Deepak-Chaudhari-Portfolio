@@ -34,7 +34,7 @@ export default function Sidebar() {
       <div className="relative flex flex-col items-center text-center">
         <figure className="mb-4 h-36 w-36 overflow-hidden rounded-lg">
           <Image
-            src="https://picsum.photos/150/150"
+            src="https://i.imgur.com/T0fbe4g.jpeg"
             alt="Deepak Chaudhari"
             width={150}
             height={150}

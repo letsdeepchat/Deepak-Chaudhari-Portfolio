@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'raw.githubusercontent.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
