@@ -22,7 +22,7 @@ const services = [
 const clients = [
     { name: 'FPO', logo: 'https://www.nabard.org/images/logo.png' },
     { name: 'NPCI', logo: 'https://play-lh.googleusercontent.com/A-dier3sEwf8V-5Xj1UuEV1GxPbJgIRl_JOqFA-SiAZhHyCMKlwaOIH3AsQSy0v4ZA=w480-h960-rw' },
-    { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png' },
+    { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg' },
     { name: 'Nokia', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nokia_wordmark.svg/2560px-Nokia_wordmark.svg.png' },
 ];
 
@@ -66,10 +66,10 @@ export default function AboutPage() {
       <section>
         <h3 className="mb-6 text-xl font-medium text-foreground">Clients</h3>
         <div className="overflow-x-auto">
-            <ul className="flex flex-nowrap gap-8">
+            <ul className="flex flex-nowrap items-center gap-8">
                 {clients.map(client => (
                     <li key={client.name} className="flex-shrink-0">
-                         <Image src={client.logo} alt={client.name} width={100} height={40} className="object-contain grayscale hover:grayscale-0 transition-all duration-300 contrast-0 hover:contrast-100"/>
+                         <Image src={client.logo} alt={client.name} width={100} height={40} className="h-10 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0"/>
                     </li>
                 ))}
             </ul>
