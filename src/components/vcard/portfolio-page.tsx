@@ -1,3 +1,4 @@
+
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -8,17 +9,17 @@ const projects = [
   {
     title: 'Sales Academy for Learning',
     category: 'Web Development',
-    imageUrl: 'https://picsum.photos/600/400?random=1',
+    imageUrl: 'https://picsum.photos/600/400?random=3',
     link: '#',
-    aiHint: 'elearning platform',
+    aiHint: 'online learning',
     description: 'Developed Node.js backend, interactive learning modules, bookmarks, quizzes, videos and leaderboard features enhancing student learning engagement.'
   },
   {
     title: 'Gram2Home e-Commerce',
     category: 'Web Development',
-    imageUrl: 'https://picsum.photos/600/400?random=2',
+    imageUrl: 'https://picsum.photos/600/400?random=4',
     link: '#',
-    aiHint: 'ecommerce website',
+    aiHint: 'online shopping',
     description: 'Built authentication, add-to-cart, payment gateway integration and seamless product flow to deliver scalable, user-friendly e-commerce experience.'
   },
 ];
