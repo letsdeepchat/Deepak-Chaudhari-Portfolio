@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'i.imgur.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'letsdeepchat.github.io',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
