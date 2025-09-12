@@ -1,3 +1,4 @@
+
 import { Resend } from 'resend';
 
 // The key is hardcoded directly for simplicity as requested.
