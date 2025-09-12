@@ -25,63 +25,6 @@ I’m currently focused on:
 | **Observability**  | Add structured logging and Prometheus metrics      |
 | **Team**           | Review PRs, write documentation for API usage      |
 
-## Deployment to Firebase App Hosting
-
-This project is configured for deployment to **Firebase App Hosting**. Follow these steps to deploy your application:
-
-### 1. Install Firebase CLI
-
-If you haven't already, install the Firebase Command Line Interface (CLI) on your machine.
-
-```bash
-npm install -g firebase-tools
-```
-
-### 2. Log in to Firebase
-
-Authenticate with your Google account by running the following command. This will open a browser window for you to log in.
-
-```bash
-firebase login
-```
-
-### 3. Initialize Firebase in Your Project
-
-From the root directory of your project, run the initialization command:
-
-```bash
-firebase init
-```
-
-- When prompted "Which Firebase features do you want to set up?", use the arrow keys to select **App Hosting**.
-- Press **space** to select it, then **Enter**.
-- Follow the prompts to either create a new Firebase project or select an existing one.
-- You will be asked to set up a backend. Choose a location for your backend (e.g., `us-central1`).
-
-This will create `.firebaserc` and `firebase.json` files in your project, linking it to your Firebase project.
-
-### 4. Set the Resend API Key as a Secret
-
-Your contact form uses the Resend API. For it to work in production, you must securely provide your `RESEND_API_KEY` to your App Hosting backend.
-
-Run the following command, replacing `your_resend_api_key_here` with your actual key from the `.env` file:
-
-```bash
-firebase apphosting:secrets:set RESEND_API_KEY
-```
-
-When prompted, paste your Resend API key (`re_...`). This stores the key securely in Google Secret Manager, and your deployed application will have access to it.
-
-### 5. Deploy Your Application
-
-Now you are ready to deploy. Run the following command from your project's root directory:
-
-```bash
-firebase deploy --only apphosting
-```
-
-The CLI will build your Next.js application and deploy it to Firebase App Hosting. Once finished, it will provide you with the URL to your live portfolio!
-
 ## Open to Collaborate
 
 I’m interested in collaborating on:
