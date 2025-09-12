@@ -25,8 +25,8 @@ const services = [
 ];
 
 const clients = [
-    { name: 'FPO', logo: 'https://www.nabard.org/images/logo.png' },
-    { name: 'NPCI', logo: 'https://play-lh.googleusercontent.com/A-dier3sEwf8V-5Xj1UuEV1GxPbJgIRl_JOqFA-SiAZhHyCMKlwaOIH3AsQSy0v4ZA=w480-h960-rw' },
+    { name: 'NABARD', logo: 'https://www.nabard.org/images/logo.png' },
+    { name: 'NPCL', logo: 'https://play-lh.googleusercontent.com/A-dier3sEwf8V-5Xj1UuEV1GxPbJgIRl_JOqFA-SiAZhHyCMKlwaOIH3AsQSy0v4ZA=w480-h960-rw' },
     { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg' },
     { name: 'Wells Fargo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/300px-Wells_Fargo_Logo_%282020%29.svg.png' },
 ];
