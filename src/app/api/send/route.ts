@@ -5,7 +5,7 @@ export async function POST(request: Request) {
   try {
     const { fullname, email, message } = await request.json();
 
-    const apiKey = process.env.RESEND_API_KEY;
+    const apiKey = "re_fRZ4pUVX_CJ9iXpYnc4nTnPLMMJJGmQfJ";
 
     if (!apiKey) {
       console.error('RESEND_API_KEY is not available');
