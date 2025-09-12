@@ -40,6 +40,7 @@ export default function Sidebar() {
             height={150}
             className="h-full w-full object-cover"
             data-ai-hint="man portrait"
+            priority
           />
         </figure>
 

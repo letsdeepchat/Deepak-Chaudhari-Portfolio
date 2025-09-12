@@ -2,11 +2,12 @@ import { Resend } from 'resend';
 
 // This is an obfuscated key. It is NOT a secure method for storing secrets.
 // The real key is embedded here and reconstructed at runtime.
-const obfuscatedKey = 'rLe_fMRZ4pUVXa_bCJc9iXdpYndc4nTnPLMMJJGmQfJ';
+const obfuscatedKey = 're_fMRZ4pUVX_CJ9iXpYnc4nTnPLMMJJGmQfJ';
 
 const getApiKey = () => {
-  // This function removes non-alphanumeric characters (except '_') to get the real key.
-  return obfuscatedKey.replace(/[^a-zA-Z0-9_]/g, '');
+  // This function is a placeholder for a real de-obfuscation method.
+  // In this case, it's just returning the key as is since there's no real transformation.
+  return obfuscatedKey;
 };
 
 const resend = new Resend(getApiKey());
