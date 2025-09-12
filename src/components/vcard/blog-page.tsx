@@ -6,24 +6,24 @@ const articles = [
         title: "Advanced Level Interview Key Points for MERN Full Stack Developers",
         category: "Web Development",
         date: "2023-10-22",
-        imageUrl: "https://picsum.photos/400/250?random=1",
-        link: "https://medium.com/@letsdeepchat/advanced-level-interview-key-points-for-mern-full-stack-developers-b8b8b8b8b8b8",
+        imageUrl: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*_rWMcFhsi6tUXX7WHG99XA.png",
+        link: "https://medium.com/p/957ab9bc0860",
         description: "A comprehensive guide covering advanced topics for MERN stack interviews, helping developers to ace their next technical round."
     },
     {
-        title: "The Power of Prototypal Inheritance in JavaScript",
+        title: "The Power of Advanced JavaScript",
         category: "JavaScript",
         date: "2023-09-15",
-        imageUrl: "https://picsum.photos/400/250?random=2",
-        link: "#",
+        imageUrl: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*dbggYEdKfBg-4SqRqrkFow.png",
+        link: "https://medium.com/p/7a93abb1de43",
         description: "An in-depth look at one of JavaScript's core concepts, explaining how it differs from classical inheritance and its practical uses."
     },
     {
         title: "Building Scalable APIs with FastAPI",
         category: "Python",
         date: "2023-08-01",
-        imageUrl: "https://picsum.photos/400/250?random=3",
-        link: "#",
+        imageUrl: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*e3lNuK2blBSweiV_Ipv8OQ.png",
+        link: "https://medium.com/p/f14e4b70571b",
         description: "A tutorial on creating high-performance APIs with FastAPI, covering everything from basic routing to advanced features."
     },
 ];
