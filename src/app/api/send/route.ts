@@ -4,17 +4,13 @@ import { Resend } from 'resend';
 // The real key is embedded here and reconstructed at runtime.
 const obfuscatedKey = 're_fMRZ4pUVX_CJ9iXpYnc4nTnPLMMJJGmQfJ';
 
-const getApiKey = () => {
-  // This function is a placeholder for a real de-obfuscation method.
-  // In this case, it's just returning the key as is since there's no real transformation.
-  return obfuscatedKey;
-};
-
 export async function POST(request: Request) {
   try {
     const { fullname, email, message } = await request.json();
 
-    const apiKey = getApiKey();
+    // The key is directly reconstructed here.
+    const apiKey = obfuscatedKey;
+
     if (!apiKey) {
       console.error('RESEND_API_KEY is not available');
       return new Response(JSON.stringify({ error: 'Server configuration error.' }), {
@@ -36,6 +32,8 @@ export async function POST(request: Request) {
     });
 
     if (error) {
+      // Log the specific error from Resend for better debugging
+      console.error('Resend API Error:', error);
       return new Response(JSON.stringify({ error: error.message }), {
         status: 400,
       });
@@ -44,6 +42,7 @@ export async function POST(request: Request) {
     return new Response(JSON.stringify(data), { status: 200 });
   } catch (error) {
      if (error instanceof Error) {
+      console.error('Catch Block Error:', error);
       return new Response(JSON.stringify({ error: error.message }), { status: 500 });
     }
     return new Response(JSON.stringify({ error: 'An unknown error occurred.' }), { status: 500 });
