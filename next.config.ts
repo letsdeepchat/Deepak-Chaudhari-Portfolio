@@ -2,7 +2,7 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/<repository-name>', // Replace <repository-name> with your repository name
+  basePath: '/Deepak-Chaudhari-Portfolio',
   typescript: {
     ignoreBuildErrors: true,
   },
