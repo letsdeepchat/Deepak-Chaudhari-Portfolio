@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { PT_Sans } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { AnalyticsProvider } from '@/components/analytics-provider';
 
 export const metadata: Metadata = {
   title: 'Deepak Chaudhari - Backend Developer Portfolio',
@@ -27,7 +28,9 @@ export default function RootLayout({
       <body
         className={`${ptSans.className} bg-background text-foreground antialiased`}
       >
-        {children}
+        <AnalyticsProvider>
+          {children}
+        </AnalyticsProvider>
         <Toaster />
       </body>
     </html>
