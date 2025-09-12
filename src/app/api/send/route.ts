@@ -1,17 +1,15 @@
 
 import { Resend } from 'resend';
 
-// The key is hardcoded directly for simplicity as requested.
-// NOTE: For a production application, it is strongly recommended to use environment variables.
-const apiKey = 're_fMRZ4pUVX_CJ9iXpYnc4nTnPLMMJJGmQfJ';
-
 export async function POST(request: Request) {
   try {
     const { fullname, email, message } = await request.json();
 
+    const apiKey = process.env.RESEND_API_KEY;
+
     if (!apiKey) {
       console.error('RESEND_API_KEY is not available');
-      return new Response(JSON.stringify({ error: 'Server configuration error.' }), {
+      return new Response(JSON.stringify({ error: 'Server configuration error: Missing API key.' }), {
         status: 500,
       });
     }
@@ -30,7 +28,6 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      // Log the specific error from Resend for better debugging
       console.error('Resend API Error:', error);
       return new Response(JSON.stringify({ error: error.message }), {
         status: 400,
