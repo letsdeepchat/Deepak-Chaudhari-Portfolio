@@ -10,8 +10,6 @@ const getApiKey = () => {
   return obfuscatedKey;
 };
 
-const resend = new Resend(getApiKey());
-
 export async function POST(request: Request) {
   try {
     const { fullname, email, message } = await request.json();
@@ -23,6 +21,8 @@ export async function POST(request: Request) {
         status: 500,
       });
     }
+
+    const resend = new Resend(apiKey);
 
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
