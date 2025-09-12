@@ -1,15 +1,12 @@
 import { Resend } from 'resend';
 
-// This is an obfuscated key. It is NOT a secure method for storing secrets.
-// The real key is embedded here and reconstructed at runtime.
-const obfuscatedKey = 're_fMRZ4pUVX_CJ9iXpYnc4nTnPLMMJJGmQfJ';
+// The key is hardcoded directly for simplicity as requested.
+// NOTE: For a production application, it is strongly recommended to use environment variables.
+const apiKey = 're_fMRZ4pUVX_CJ9iXpYnc4nTnPLMMJJGmQfJ';
 
 export async function POST(request: Request) {
   try {
     const { fullname, email, message } = await request.json();
-
-    // The key is directly reconstructed here.
-    const apiKey = obfuscatedKey;
 
     if (!apiKey) {
       console.error('RESEND_API_KEY is not available');
