@@ -23,7 +23,7 @@ const clients = [
     { name: 'FPO', logo: 'https://www.nabard.org/images/logo.png' },
     { name: 'NPCI', logo: 'https://play-lh.googleusercontent.com/A-dier3sEwf8V-5Xj1UuEV1GxPbJgIRl_JOqFA-SiAZhHyCMKlwaOIH3AsQSy0v4ZA=w480-h960-rw' },
     { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg' },
-    { name: 'Nokia', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nokia_wordmark.svg/2560px-Nokia_wordmark.svg.png' },
+    { name: 'Wells Fargo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wells_Fargo_Bank_logo.svg/2560px-Wells_Fargo_Bank_logo.svg.png' },
 ];
 
 export default function AboutPage() {
