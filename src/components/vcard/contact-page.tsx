@@ -15,6 +15,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Send } from 'lucide-react';
+import { useState } from 'react';
 
 const formSchema = z.object({
   fullname: z.string().min(2, { message: 'Full name is required.' }),
@@ -24,6 +25,7 @@ const formSchema = z.object({
 
 export default function ContactPage() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -33,13 +35,36 @@ export default function ContactPage() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: 'Message Sent!',
-      description: 'Thanks for reaching out, I will get back to you soon.',
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Something went wrong. Please try again.');
+      }
+
+      toast({
+        title: 'Message Sent!',
+        description: 'Thanks for reaching out, I will get back to you soon.',
+      });
+      form.reset();
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'An unknown error occurred.';
+      toast({
+        title: 'Error',
+        description: message,
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -118,10 +143,10 @@ export default function ContactPage() {
             <Button
               type="submit"
               className="rounded-lg bg-accent px-6 py-3 text-accent-foreground hover:bg-accent/90"
-              disabled={form.formState.isSubmitting}
+              disabled={isSubmitting}
             >
               <Send className="mr-2 h-4 w-4" />
-              <span>Send Message</span>
+              <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
             </Button>
           </form>
         </Form>
