@@ -1,4 +1,4 @@
-import { Code, Server, Bot } from 'lucide-react';
+import { Code, Server, Bot, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 
 const services = [
@@ -17,13 +17,18 @@ const services = [
     title: 'Chatbot Integration',
     description: 'Integrating AI-powered chatbots for seamless user experiences.',
   },
+  {
+    icon: <ShieldCheck className="h-10 w-10 text-accent" />,
+    title: 'Secured Authentication',
+    description: 'Implementing RBAC with Next.js for robust security.',
+  },
 ];
 
 const clients = [
     { name: 'FPO', logo: 'https://www.nabard.org/images/logo.png' },
     { name: 'NPCI', logo: 'https://play-lh.googleusercontent.com/A-dier3sEwf8V-5Xj1UuEV1GxPbJgIRl_JOqFA-SiAZhHyCMKlwaOIH3AsQSy0v4ZA=w480-h960-rw' },
     { name: 'American Express', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg' },
-    { name: 'Wells Fargo', logo: 'https://i.imgur.com/3f2rS6M.png' },
+    { name: 'Wells Fargo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/300px-Wells_Fargo_Logo_%282020%29.svg.png' },
 ];
 
 export default function AboutPage() {
