@@ -154,7 +154,8 @@ export default function ContactPage() {
                   type="button"
                   className="rounded-lg bg-accent px-6 py-3 text-accent-foreground hover:bg-accent/90"
                 >
-                  Chat on WhatsApp
+                  <Send className="mr-2 h-4 w-4" />
+                  <span>Send Message</span>
                 </Button>
               </a>
 
