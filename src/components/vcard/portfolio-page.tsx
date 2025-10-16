@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'NPCL Dashboard & Analytics',
     category: 'Web Development',
-    imageUrl: 'https://private-user-images.githubusercontent.com/215790186/497722798-912fe048-2682-495e-9d80-3c245f3f1471.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA2MTY2MzgsIm5iZiI6MTc2MDYxNjMzOCwicGF0aCI6Ii8yMTU3OTAxODYvNDk3NzIyNzk4LTkxMmZlMDQ4LTI2ODItNDk1ZS05ZDgwLTNjMjQ1ZjNmMTQ3MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAxNlQxMjA1MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NzVlODllM2U0Yjg1MzM4MjVhMTMwYmQwMWUwN2U2Y2IxMzgwYTM5NTMwYmExYzEyYTNlZjc3MWI0NTQ5ZDM0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Dm95oRghzV4W5JVjB_HI1p5X4Ac1acSfbS9OooMVyNw',
+    imageUrl: '/npcl_dashboard.png',
     link: '#',
     aiHint: 'analytics dashboard',
     description: 'A comprehensive Power Management Dashboard with role-based access, real-time monitoring, and detailed analytics, built with Next.js, TypeScript, and PostgreSQL for NPCL.'
