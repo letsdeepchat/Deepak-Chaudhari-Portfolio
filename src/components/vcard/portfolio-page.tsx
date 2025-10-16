@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'NPCL Dashboard & Analytics',
     category: 'Web Development',
-    imageUrl: 'https://github.com/letsdeepchat/Deepak-Chaudhari-Portfolio/blob/main/npcl_dashboard.png',
+    imageUrl: 'https://private-user-images.githubusercontent.com/49471265/502145094-c3bbc0c1-d0c7-4d42-9698-0f3928b9914b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA2MjkzNjUsIm5iZiI6MTc2MDYyOTA2NSwicGF0aCI6Ii80OTQ3MTI2NS81MDIxNDUwOTQtYzNiYmMwYzEtZDBjNy00ZDQyLTk2OTgtMGYzOTI4Yjk5MTRiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDE2VDE1Mzc0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg0NDFiNzY2ZjdiNzgzNDIxNTRjZjRiY2MzYzM2ZWI1MDMwNjEwYzllMzEzNjg4OTA2NGVjNmYxNGQxZjc2Y2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ae8aIdpQtPFbaLUgRoazdX_0MMz_lI_3N3jgKH1VEVw',
     link: '#',
     aiHint: 'analytics dashboard',
     description: 'A comprehensive Power Management Dashboard with role-based access, real-time monitoring, and detailed analytics, built with Next.js, TypeScript, and PostgreSQL for NPCL.'
