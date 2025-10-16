@@ -1,3 +1,4 @@
+
 import { Book, Code, GraduationCap } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { JavaIcon, PythonIcon, ReactIcon, NextJSIcon, FastAPIIcon, DockerIcon } from '@/components/portfolio/icons';
@@ -57,7 +58,8 @@ const certifications = [
     "Selenium Essential Training",
     "Udemy Certified The Complete (FullStack) Web Developer: Zero To Mastery",
     "React + Redux",
-    "Ducat Certified Data Science using Python"
+    "Ducat Certified Data Science using Python",
+    "Agentic AI with Langchain & Langraph"
 ]
 
 export default function ResumePage() {
