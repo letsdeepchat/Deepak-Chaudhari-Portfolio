@@ -140,15 +140,24 @@ export default function ContactPage() {
                 </FormItem>
               )}
             />
+            {/* <Button type="submit" className="rounded-lg bg-accent px-6 py-3 text-accent-foreground hover:bg-accent/90" disabled={isSubmitting} >
+
+              <Send className="mr-2 h-4 w-4" />
+              <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+            </Button> */}
+            <a
+                href="https://wa.me/917895840255"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   type="button"
                   className="rounded-lg bg-accent px-6 py-3 text-accent-foreground hover:bg-accent/90"
                 >
+                  Chat on WhatsApp
                 </Button>
+              </a>
 
-              <Send className="mr-2 h-4 w-4" />
-              <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-            </Button>
           </form>
         </Form>
       </section>
