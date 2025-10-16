@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'NPCL Dashboard & Analytics',
     category: 'Web Development',
-    imageUrl: '/npcl_dashboard.png',
+    imageUrl: 'https://github.com/letsdeepchat/Deepak-Chaudhari-Portfolio/blob/main/npcl_dashboard.png',
     link: '#',
     aiHint: 'analytics dashboard',
     description: 'A comprehensive Power Management Dashboard with role-based access, real-time monitoring, and detailed analytics, built with Next.js, TypeScript, and PostgreSQL for NPCL.'
