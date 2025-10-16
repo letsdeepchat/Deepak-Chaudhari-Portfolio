@@ -7,6 +7,22 @@ import Link from 'next/link';
 
 const projects = [
   {
+    title: 'NPCL Dashboard & Analytics',
+    category: 'Web Development',
+    imageUrl: 'https://private-user-images.githubusercontent.com/215790186/497722798-912fe048-2682-495e-9d80-3c245f3f1471.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA2MTY2MzgsIm5iZiI6MTc2MDYxNjMzOCwicGF0aCI6Ii8yMTU3OTAxODYvNDk3NzIyNzk4LTkxMmZlMDQ4LTI2ODItNDk1ZS05ZDgwLTNjMjQ1ZjNmMTQ3MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAxNlQxMjA1MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NzVlODllM2U0Yjg1MzM4MjVhMTMwYmQwMWUwN2U2Y2IxMzgwYTM5NTMwYmExYzEyYTNlZjc3MWI0NTQ5ZDM0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Dm95oRghzV4W5JVjB_HI1p5X4Ac1acSfbS9OooMVyNw',
+    link: '#',
+    aiHint: 'analytics dashboard',
+    description: 'A comprehensive Power Management Dashboard with role-based access, real-time monitoring, and detailed analytics, built with Next.js, TypeScript, and PostgreSQL for NPCL.'
+  },
+  {
+    title: 'Asterisk ARI Voice Assistant',
+    category: 'AI Integration',
+    imageUrl: 'https://github.com/user-attachments/assets/2d908a84-7573-497f-8d2c-e66155ccc8fb',
+    link: '#',
+    aiHint: 'voice assistant futuristic',
+    description: 'Enterprise voice assistant using OpenAI GPT-4 and Asterisk ARI for NPCL customer service, featuring advanced real-time telephony integration for seamless user interaction.'
+  },
+  {
     title: 'Sales Academy for Learning',
     category: 'Web Development',
     imageUrl: 'https://letsdeepchat.github.io/portfolio/assets/img/SalesAcademyProject.jpg',
@@ -24,7 +40,7 @@ const projects = [
   },
 ];
 
-const categories = ['All', 'Web Development'];
+const categories = ['All', 'Web Development', 'AI Integration'];
 
 export default function PortfolioPage() {
   const [filter, setFilter] = useState('All');
@@ -63,16 +79,15 @@ export default function PortfolioPage() {
           {filteredProjects.map((project) => (
             <li key={project.title}>
               <Link href={project.link} target="_blank" rel="noopener noreferrer" className="group block">
-                <figure className="relative overflow-hidden rounded-lg">
+                <figure className="relative h-48 w-full overflow-hidden rounded-lg">
                    <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                      <Eye className="h-8 w-8 text-white" />
                    </div>
                   <Image
                     src={project.imageUrl}
                     alt={project.title}
-                    width={300}
-                    height={200}
-                    className="h-auto w-full transform transition-transform duration-300 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                     data-ai-hint={project.aiHint}
                   />
                 </figure>
