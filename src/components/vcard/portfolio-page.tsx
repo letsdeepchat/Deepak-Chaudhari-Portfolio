@@ -10,7 +10,7 @@ const projects = [
     title: 'NPCL Dashboard & Analytics',
     category: 'Web Development',
     imageUrl: 'https://github.com/user-attachments/assets/912fe048-2682-495e-9d80-3c245f3f1471',
-    link: '#',
+    link: 'https://github.com/letsdeepchat/NPCL-Dashboard',
     aiHint: 'analytics dashboard',
     description: 'A comprehensive Power Management Dashboard with role-based access, real-time monitoring, and detailed analytics, built with Next.js, TypeScript, and PostgreSQL for NPCL.'
   },
@@ -18,7 +18,7 @@ const projects = [
     title: 'Asterisk ARI Voice Assistant',
     category: 'AI Integration',
     imageUrl: 'https://github.com/user-attachments/assets/2d908a84-7573-497f-8d2c-e66155ccc8fb',
-    link: '#',
+    link: 'https://github.com/letsdeepchat/AsteriskARI-Bot',
     aiHint: 'voice assistant futuristic',
     description: 'Enterprise voice assistant using OpenAI GPT-4 and Asterisk ARI for NPCL customer service, featuring advanced real-time telephony integration for seamless user interaction.'
   },
@@ -26,7 +26,7 @@ const projects = [
     title: 'Sales Academy for Learning',
     category: 'Web Development',
     imageUrl: 'https://letsdeepchat.github.io/portfolio/assets/img/SalesAcademyProject.jpg',
-    link: '#',
+    link: 'https://github.com/letsdeepchat/SalesAcademy',
     aiHint: 'e-learning platform',
     description: 'Developed Node.js backend, interactive learning modules, bookmarks, quizzes, videos and leaderboard features enhancing student learning engagement.'
   },
@@ -34,7 +34,7 @@ const projects = [
     title: 'Gram2Home e-Commerce',
     category: 'Web Development',
     imageUrl: 'https://letsdeepchat.github.io/portfolio/assets/img/g2m.jpg',
-    link: '#',
+    link: 'https://github.com/letsdeepchat/E-commerceAPISystem',
     aiHint: 'e-commerce shopping',
     description: 'Built authentication, add-to-cart, payment gateway integration and seamless product flow to deliver scalable, user-friendly e-commerce experience.'
   },
