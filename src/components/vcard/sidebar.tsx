@@ -34,7 +34,7 @@ export default function Sidebar() {
       <div className="relative flex flex-col items-center text-center">
         <figure className="mb-4 h-36 w-36 overflow-hidden rounded-lg">
           <Image
-            src="https://media.licdn.com/dms/image/sync/v2/D4D27AQFsRFoF3xHF2A/articleshare-shrink_480/articleshare-shrink_480/0/1711425572540?e=1761235200&v=beta&t=4fUZsK5PRsvH91KCEwGN6JbREOXSiyZ0Tg7kV1QsP4E"
+            src="https://github.com/user-attachments/assets/ba483dd1-f53f-422c-9f07-2a9a934e53f9"
             alt="Deepak Chaudhari"
             width={150}
             height={150}
