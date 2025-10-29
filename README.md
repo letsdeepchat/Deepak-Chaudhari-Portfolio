@@ -44,3 +44,6 @@ You can connect via:
 ## My Favourite Quote
 
 > **"The real skill is: knowing what to ask, how to fix, and how to apply."** - Modi Ji 🤪😂
+
+<img width="460" height="460" alt="image" src="https://github.com/user-attachments/assets/ba483dd1-f53f-422c-9f07-2a9a934e53f9" />
+
