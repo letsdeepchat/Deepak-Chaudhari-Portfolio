@@ -13,7 +13,10 @@ export default function Navbar({
     <nav className="w-full rounded-2xl bg-card p-2 shadow-md">
       <ul className="flex justify-around">
         {pages.map((page) => (
-          <li key={page} className="navbar-item">
+          <li
+            key={page}
+            className={`navbar-item ${page === 'Blog' ? 'hidden md:block' : ''}`}
+          >
             <button
               onClick={() => setActivePage(page)}
               className={`w-full rounded-lg px-3 py-2 text-sm font-medium capitalize transition-colors duration-300 
